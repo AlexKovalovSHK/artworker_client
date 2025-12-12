@@ -10,6 +10,7 @@ import ProtectedRoute from "./components/auth_comp/ProtectedRoute"
 import SignUp from "./components/auth_comp/SignUp"
 import { useEffect } from "react"
 import { getUser, setToken } from "./features/auth/authSlice"
+import { getUrl } from "./utils/config"
 
 declare global {
   interface Window {
@@ -19,7 +20,7 @@ declare global {
 
 export const CONTRACT_ADDRESS_V1 = import.meta.env.VITE_CONTRACT_ADDRESS_V1 || ""
 export const CONTRACT_ADDRESS_V2 = import.meta.env.VITE_CONTRACT_ADDRESS_V2 || "0xf6E909b358225Cf4F024c4e0CA888CDe2478C7EC"
-export const apiUrl = import.meta.env.VITE_API_URL || "https://art-serw.shk.solutions";
+export const apiUrl = getUrl()
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();

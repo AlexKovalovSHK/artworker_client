@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { store } from '../../app/store';
+import { getUrl } from '../../utils/config';
 
-const BASE_URL = import.meta.env.VITE_API_URL || "https://art-serw.shk.solutions";
+const BASE_URL = getUrl()
 
 export const axiosInstance = axios.create({
   baseURL: BASE_URL,
