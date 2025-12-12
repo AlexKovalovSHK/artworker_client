@@ -17,8 +17,7 @@
     "types": ["vitest/globals"]
   },
   "include": [
-    "src", // Убедитесь, что ваш основной код включен
-   // "vite.config.ts" // Убедитесь, что vite.config.ts включен
+    "src",
   ],
   "exclude": ["node_modules"], // Исключение node_modules
   "references": [{ "path": "./tsconfig.node.json" }]

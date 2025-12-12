@@ -3,7 +3,8 @@
     "composite": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true
+    "target": "ES2022",  // <-- ВАЖНО: Должно быть ES2015 или новее (лучше ES2022)
+    "strict": true
   },
   "include": ["vite.config.ts"]
 }
