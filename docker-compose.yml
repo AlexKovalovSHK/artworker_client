@@ -3,5 +3,5 @@ services:
     image: artworker_client:latest
     container_name: artworker_client
     ports:
-      - "3002:3007"
+      - "3007:3007"
     command: "nginx -g 'daemon off;'"
