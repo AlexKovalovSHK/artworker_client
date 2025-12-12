@@ -17,9 +17,9 @@ declare global {
   }
 }
 
-export const CONTRACT_ADDRESS_V1 = import.meta.env.VITE_CONTRACT_ADDRESS_V1
-export const CONTRACT_ADDRESS_V2 = import.meta.env.VITE_CONTRACT_ADDRESS_V2
-export const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3000";
+export const CONTRACT_ADDRESS_V1 = import.meta.env.VITE_CONTRACT_ADDRESS_V1 || ""
+export const CONTRACT_ADDRESS_V2 = import.meta.env.VITE_CONTRACT_ADDRESS_V2 || "0xf6E909b358225Cf4F024c4e0CA888CDe2478C7EC"
+export const apiUrl = import.meta.env.VITE_API_URL || "https://art-serw.shk.solutions";
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
