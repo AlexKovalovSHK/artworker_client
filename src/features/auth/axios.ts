@@ -1,9 +1,10 @@
 import axios from 'axios';
 import { store } from '../../app/store';
-import { apiUrl } from '../../App';
+
+const BASE_URL = import.meta.env.VITE_API_URL || "https://art-serw.shk.solutions";
 
 export const axiosInstance = axios.create({
-  baseURL: apiUrl,
+  baseURL: BASE_URL,
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
